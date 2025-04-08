@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Re-Read</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Read</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Inputs ocultos para controlar las pestañas -->
-  <input type="radio" name="tabs" id="tab1" checked>
-  <input type="radio" name="tabs" id="tab2">
-  <input type="radio" name="tabs" id="tab3">
+    <!-- Inputs ocultos para controlar las pestañas -->
+    <input type="radio" name="tabs" id="tab1" checked>
+    <input type="radio" name="tabs" id="tab2">
+    <input type="radio" name="tabs" id="tab3">
 
-  <!-- Cabecera -->
-  <div class="cabecera">
-    <p>Re-Read</p>
-  </div>
-
-  <!-- Logo central -->
-  <div class="logo-principal">
-    <h1>Re-Read</h1>
-    <p class="descripcion">
-      En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
-    </p>
-  </div>
-
-  <!-- Tabs -->
-  <div class="nav-container">
-    <label for="tab1" class="tab-label">Re-Read</label>
-    <label for="tab2" class="tab-label">Libros</label>
-    <label for="tab3" class="tab-label">eBooks</label>
-  </div>
-
-  <!-- Contenedor general que incluye las tabs y el top ventas -->
-  <div class="contenido-general">
-    
-    <!-- Contenido de las pestañas -->
-    <div class="contenido-tabs">
-      <!-- TAB 1 -->
-      <div id="contenido-principal" class="tab-content">
-        <h2 class="mensaje-principal">Nunca la lectura ha sido tan necesaria</h2>
-        <p class="mensaje-secundario">En estos tiempos difíciles Re-Read se suma al mensaje de <strong>#yomequedoencasa</strong> por el bien común de la sociedad.</p>
-
-        <h3 class="mensaje-principal">Reduce & Reuse & Read</h3>
-        <p class="mensaje-eco">
-          Somos la librería Eco-Friendly — Re-Read nació pensando en verde con el objetivo de compartir una pasión, la lectura y para expresar una preocupación: si queremos construir un futuro sostenible, es necesario que reduzcamos el consumo y que reutilicemos cuantos más objetos materiales mejor.
-        </p>
-      </div>
-
-      <!-- TAB 2 -->
-      <div id="contenido-libros" class="tab-content">
-        <h2 class="titulo-principal">Todos los libros tienen el mismo precio</h2>
-        <p class="subtitulo">Libros casi nuevos a un precio casi imposible.</p>
-        <div class="libros-precios">
-          <div class="libro"><img src="/IMG/1-libro-3€.gif" alt="1 libro 3€"></div>
-          <div class="libro"><img src="/IMG/2-libros-5€.gif" alt="2 libros 5€"></div>
-          <div class="libro"><img src="/IMG/5-libros-10€.gif" alt="5 libros 10€"></div>
-        </div>
-        <p class="texto-pregunta">¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</p>
-        <p class="texto-info">
-          En Re-Read compramos tus libros para darles una segunda vida. Los compramos todos a 0,20 euros. Siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
-        </p>
-      </div>
-
-      <!-- TAB 3 -->
-      <div id="contenido-ebooks" class="tab-content">
-        <h2 class="titulo-principal">Toda la actualidad en eBook</h2>
-        <div class="libros-precios">
-          <div class="libro"><img src="/IMG/cell.jpeg" alt="Cell Stephen King"></div>
-          <div class="libro"><img src="/IMG/elciclodelhombrelobo.jpeg" alt="El ciclo del hombre lobo"></div>
-          <div class="libro"><img src="/IMG/elresplandor.jpeg" alt="El resplandor"></div>
-          <div class="libro"><img src="/IMG/doctorsleep.jpeg" alt="Doctor Sueño"></div>
-          <div class="libro"><img src="/IMG/mientrasescribo.jpeg" alt="Mentiras de Stephen King"></div>
-        </div>
-      </div>
+    <!-- Cabecera -->
+    <div class="cabecera">
+        <p>Re-Read</p>
     </div>
 
-    <!-- Columna derecha con los top ventas -->
-    <div class="col-md-4">
-      <div class="top-ventas">
-        <p class="text-center mb-3">Top ventas</p>
-        <div class="libro-verde">Cien años de soledad.</div>
-        <div class="libro-verde">Crónica de una muerte anunciada.</div>
-        <div class="libro-verde">El otoño del patriarca.</div>
-        <div class="libro-verde">El general en su laberinto.</div>
-      </div>
+    <!-- Logo central -->
+    <div class="logo-principal">
+        <h1>Re-Read</h1>
+        <p class="descripcion">
+            En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
+        </p>
     </div>
 
-  </div>
+    <!-- Navegación -->
+    <div class="nav-container">
+        <label for="tab1" class="tab-label">Re-Read</label>
+        <label for="tab2" class="tab-label">Libros</label>
+        <label for="tab3" class="tab-label">eBooks</label>
+    </div>
+
+    <!-- Contenido principal + columna lateral -->
+    <div class="contenido-general">
+        <!-- Contenido de pestañas -->
+        <div class="contenido-tabs">
+            <!-- TAB 1 -->
+            <div id="contenido-principal" class="tab-content">
+                <h2 class="mensaje-principal">Nunca la lectura ha sido tan necesaria</h2>
+                <p class="mensaje-secundario">En estos tiempos difíciles Re-Read se suma al mensaje de <strong>#yomequedoencasa</strong> por el bien común de la sociedad.</p>
+
+                <h3 class="mensaje-principal">Reduce & Reuse & Read</h3>
+                <p class="mensaje-eco">
+                    Somos la librería Eco-Friendly — Re-Read nació pensando en verde con el objetivo de compartir una pasión, la lectura y para expresar una preocupación: si queremos construir un futuro sostenible, es necesario que reduzcamos el consumo y que reutilicemos cuantos más objetos materiales mejor.
+                </p>
+            </div>
+
+            <!-- TAB 2 -->
+            <div id="contenido-libros" class="tab-content">
+                <h2 class="titulo-principal">Todos los libros tienen el mismo precio</h2>
+                <p class="subtitulo">Libros casi nuevos a un precio casi imposible.</p>
+                <div class="libros-precios">
+                    <div class="libro"><img src="/img/1-libro-3€.gif" alt="1 libro 3€"></div>
+                    <div class="libro"><img src="/img/2-libros-5€.gif" alt="2 libros 5€"></div>
+                    <div class="libro"><img src="/img/5-libros-10€.gif" alt="5 libros 10€"></div>
+                </div>
+                <p class="texto-pregunta">¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</p>
+                <p class="texto-info">
+                    En Re-Read compramos tus libros para darles una segunda vida. Los compramos todos a 0,20 euros. Siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
+                </p>
+            </div>
+
+            <!-- TAB 3 -->
+            <div id="contenido-ebooks" class="tab-content">
+                <h2 class="titulo-principal">Toda la actualidad en eBook</h2>
+                <div class="libros-precios">
+                    <div class="libro"><img src="/img/cell.jpeg" alt="Cell Stephen King"></div>
+                    <div class="libro"><img src="/img/elciclodelhombrelobo.jpeg" alt="El ciclo del hombre lobo"></div>
+                    <div class="libro"><img src="/img/elresplandor.jpeg" alt="El resplandor"></div>
+                    <div class="libro"><img src="/img/doctorsleep.jpeg" alt="Doctor Sueño"></div>
+                    <div class="libro"><img src="/img/mientrasescribo.jpeg" alt="Mentiras de Stephen King"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top ventas alineado a la derecha -->
+        <div class="col-md-4">
+            <div class="top-ventas">
+                <p class="text-center mb-3">Top ventas</p>
+                <div class="libro-verde">Cien años de soledad.</div>
+                <div class="libro-verde">Crónica de una muerte anunciada.</div>
+                <div class="libro-verde">El otoño del patriarca.</div>
+                <div class="libro-verde">El general en su laberinto.</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
