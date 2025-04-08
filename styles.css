@@ -1,0 +1,218 @@
+body {
+    font-family: Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
+  .cabecera {
+    background-color: #1d7d74;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.logo-principal {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 40px 0 10px;
+}
+
+.descripcion {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+  .nav-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    border-bottom: 2px solid #d85e16;
+    background: white;
+  }
+  
+  .tab-label {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[name="tabs"] {
+    display: none;
+  }
+  
+  #tab1:checked ~ .nav-container label[for="tab1"],
+  #tab2:checked ~ .nav-container label[for="tab2"],
+  #tab3:checked ~ .nav-container label[for="tab3"] {
+    background-color: #d85e16;
+    color: white;
+  }
+  
+  .contenido-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+  }
+  
+  .contenido-tabs {
+    flex: 3;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+  
+  #tab1:checked ~ .contenido-general .contenido-tabs #contenido-principal,
+  #tab2:checked ~ .contenido-general .contenido-tabs #contenido-libros,
+  #tab3:checked ~ .contenido-general .contenido-tabs #contenido-ebooks {
+    display: block;
+  }
+  
+  .mensaje-principal {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .mensaje-secundario,
+  .mensaje-eco {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .titulo-principal {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .libros-precios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .libro {
+    max-width: 200px;
+  }
+  
+  .libro img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .texto-pregunta {
+    font-weight: bold;
+    margin: 30px 0 15px;
+  }
+  
+  .texto-info {
+    line-height: 1.6;
+  }
+  
+  .col-md-4 {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .top-ventas {
+    width: 100%;
+  }
+  
+  .text-center {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .libro-verde {
+    background-color: #1d7d74;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .contenido-general {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .contenido-tabs, .col-md-4 {
+      width: 100%;
+    }
+  
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+    }
+  
+    .logo-principal {
+      font-size: 2.2rem;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: stretch;
+      border-bottom: none;
+      gap: 10px;
+      padding: 0 10px;
+    }
+  
+    .tab-label {
+      width: 100%;
+      background-color: #eee;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 1.2rem;
+    }
+  
+    #tab1:checked ~ .nav-container label[for="tab1"],
+    #tab2:checked ~ .nav-container label[for="tab2"],
+    #tab3:checked ~ .nav-container label[for="tab3"] {
+      background-color: #d85e16;
+      color: white;
+    }
+  
+    /* SOLO aplica a imágenes dentro de la sección de eBooks en móvil */
+#contenido-ebooks .libros-precios {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contenido-ebooks .libro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #contenido-ebooks .libro img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+  }
+  
+      
+    }
+  
